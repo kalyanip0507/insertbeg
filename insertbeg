@@ -1,0 +1,20 @@
+#include<stdio.h>
+int main()
+{
+    int a[100],i,n,b[100];
+    printf("Enter size");
+    scanf("%d",&n);
+        printf("Enter the array elements");
+    for(i=0;i<n;i++)
+    {
+    scanf("%d",&a[i]);
+    }
+    b[0]=20;
+    for(i=0;i<n+1;i++){
+        b[i+1]=a[i];
+    }
+
+   for(i=0;i<n+1;i++){
+    printf("%d",b[i]);
+   }
+}
